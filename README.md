@@ -1,75 +1,35 @@
-# React + TypeScript + Vite
+# TO DO LIST
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[ X ] - Créer une maquette Figma
+[ X ] - Repo Github
+[ 0 ] - Composant player (riri) - Tableau
 
-Currently, two official plugins are available:
+# créer un composant Player
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- props: name
+- state: pv(20)
+- ui
+  - nom
+  - pv (bonus: afficher pv actuels / pv max)
+  - boutons: reset, +1,-1,+5,-5
+- styles
+  - le Player s'affiche sous forme de card (rectangle vertical)
+  - responsive
+- bonus
+  - si pv<=0, on disable tous les boutons sauf "reset"
 
-## React Compiler
+# mon App gère _des_ joueurs
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Appeler Player 3x
+- state: players(["Riri", "Fifi", "Loulou"])
+- ui
+  - affiche les Players (recherche sur `.map`)
+- bonus
+  - form qui permet d'ajouter un joueur via un input
 
-## Expanding the ESLint configuration
+# Rendu & contraintes
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+- Repo GHub à créer de suite
+- un readme.md mis à jour chaque demi journée avec les changements faits
+- pas d'IA
+- à faire solo

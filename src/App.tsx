@@ -1,9 +1,11 @@
-import { useState } from "react";
+import player from "./component/player";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <></>;
+  return (
+    <>
+      <player />
+    </>
+  );
 }
 
 export default App;
