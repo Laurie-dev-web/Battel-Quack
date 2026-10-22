@@ -1,24 +1,13 @@
-// type PlayerProps = {
-//   name: string;
-//   imgSrc: string;
-// };
-// function Player({ name, imgSrc }: PlayerProps) {
-//   return { name: "riri", imgSrc: "./assets/quack.png" };
-// }
-// export default Player;
-
-// export const player = () => {
-//   const name: string = "riri";
-//   return (
-//     <div>{name}</div>
-//   )
-// }
-// ça marche (normalement)
-
 type Props = {
   name: string;
+  imgSrc: string;
 };
 
-export const Player = ({ name }: Props) => {
-  return <>{name}</>;
+export const Player = ({ name, imgSrc }: Props) => {
+  return (
+    <>
+      <p>{name}</p>
+      <img src={imgSrc} alt={name} />
+    </>
+  );
 };

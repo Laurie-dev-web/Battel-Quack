@@ -2,8 +2,16 @@
 
 [ X ] - Créer une maquette Figma
 [ X ] - Repo Github
-[ 0 ] - Composant player (name = "riri") -
-[ 0 ] - rajouter dans le composant player (src)
+[ X ] - Composant player (name = "riri") -
+[ X ] - Rajouter dans le composant player : (src)
+[ X ] - Affichage des pv (20) / +1 / -1 / +5 / -5
+[ X ] - Bouton Reset
+
+[ 0 ] - PV 20 ne vas pas au dessus de 20.
+
+[ 0 ] - PV <= 0 on disable
+[ 0 ] - Ajouter fifi , loulou.
+[ 0 ] - CSS card
 
 # créer un composant Player
 
