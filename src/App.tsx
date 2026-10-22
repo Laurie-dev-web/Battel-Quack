@@ -1,9 +1,10 @@
-import player from "./component/player";
+import "./App.css";
+import { Player } from "./components/player.tsx";
 
 function App() {
   return (
     <>
-      <player />
+      <Player name="riri" />
     </>
   );
 }

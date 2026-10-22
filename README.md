@@ -2,7 +2,8 @@
 
 [ X ] - Créer une maquette Figma
 [ X ] - Repo Github
-[ 0 ] - Composant player (riri) - Tableau
+[ 0 ] - Composant player (name = "riri") -
+[ 0 ] - rajouter dans le composant player (src)
 
 # créer un composant Player
 
